@@ -1,0 +1,45 @@
+*:after,
+*:before,
+* {
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    outline: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    @include reset-list;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}

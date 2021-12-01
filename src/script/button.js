@@ -1,2 +1,4 @@
-const btn = document.querySelector('.btn')
-console.log('Button.js File')
+(function() {
+    const btn = document.querySelector('.btn')
+    console.log('Button.js File')
+})()

@@ -19,7 +19,7 @@ function liveReload() {
 }
 
 function compileStyles() {
-    return gulp.src('src/scss/main.scss')
+    return gulp.src('src/scss/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream())

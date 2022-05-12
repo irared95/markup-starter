@@ -3,14 +3,23 @@
 @import "./utils/variable";
 @import "./utils/mixins";
 @import "./utils/my-normalize";
-.container {
-    max-width: 1180px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 @import "./components/dots";
 @import "./components/btns";
 @import "./components/footer";
 @import "./components/header";
+
+
+//utils
+@import './utils/reset';
+@import "./utils/fonts";
+@import "./utils/variable";
+@import "./utils/mixins";
+@import "./utils/my-normalize";
+
+//libs
+@import 'libs/slick-slider/slick';
+
+body{
+    background-color: tomato;
+}

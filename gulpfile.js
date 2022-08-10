@@ -7,6 +7,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const del = require('del');
 const zip = require('gulp-zip');
+const rename = require('gulp-rename');
 
 function liveReload() {
     browserSync.init({
@@ -27,7 +28,8 @@ function compileStyles() {
 
 function transpileScript() {
     return gulp.src('src/script/*.js')
-        .pipe(concat('script.js'))
+        .pipe(concat('index.js'))
+        .pipe(rename('myScript.js'))
         .pipe(gulp.dest('src/js'))
         .pipe(browserSync.stream());
 }
